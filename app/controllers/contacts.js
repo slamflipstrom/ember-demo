@@ -3,8 +3,8 @@ import Ember from "ember";
 export default Ember.ArrayController.extend({
   actions: {
     createContact: function(){
-    var firstname = this.get('newFirstname');
-    var lastname = this.get('newLastname');
+    var firstName = this.get('newFirstName');
+    var lastName = this.get('newLastName');
     var address = this.get('newAddress');
     var country = this.get('newCountry');
     var state = this.get('newState');
@@ -13,12 +13,11 @@ export default Ember.ArrayController.extend({
     var phone = this.get('newPhone');
     var email = this.get('newEmail');
 
-    if(!firstname){return false;}
-    if(!firstname.trim()) {return;}
+    if(!firstName && !lastName && !phone && !email){return false;}
 
     var contact = this.store.createRecord('contact', {
-      firstname: firstname,
-      lastname: lastname,
+      firstName: firstName,
+      lastName: lastName,
       address: address,
       country: country,
       state: state,
@@ -29,8 +28,8 @@ export default Ember.ArrayController.extend({
     });
 
     // Clears text field
-    this.set('newFirstname', '');
-    this.set('newLastname', '');
+    this.set('newFirstName', '');
+    this.set('newLastName', '');
     this.set('newAddress', '');
     this.set('newCountry', '');
     this.set('newState', '');
