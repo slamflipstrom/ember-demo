@@ -5,7 +5,7 @@ export default Ember.Route.extend({
     updateContact: function(){
       var contact = this.get('currentModel');
 
-      this.transitionTo('contact.show', contact.save());
+      this.transitionTo('contacts', contact.save());
     }
   }
 });

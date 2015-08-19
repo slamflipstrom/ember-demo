@@ -1,23 +1,24 @@
+<h1>SHOW</h1>
 <form>
   <label>First Name:</label>  
-  {{input type="text" value=firstName placeholder=contact.firstName}}<br>
+  {{input type="text" value=model.firstName}}<br>
   <label>Last Name:</label>  
-  {{input type="text" value=lastName placeholder=contact.lastName}}<br>
+  {{input type="text" value=model.lastName}}<br>
   <label>Address:</label>  
-  {{input type="text" value=address placeholder=contact.address}}<br>
+  {{input type="text" value=model.address}}<br>
   <label>Country:</label>  
-  {{input type="text" value=country placeholder=contact.country}}<br>
+  {{input type="text" value=model.country}}<br>
   <label>City:</label>  
-  {{input type="text" value=city placeholder=contact.city}}<br>
+  {{input type="text" value=model.city}}<br>
   <label>State:</label>  
-  {{input type="text" value=state placeholder=contact.state}}<br>
+  {{input type="text" value=model.state}}<br>
   <label>Zip Code:</label>  
-  {{input type="text" value=zip placeholder=contact.zip}}<br>
+  {{input type="text" value=model.zip}}<br>
   <label>Phone:</label>  
-  {{input type="text" value=phone placeholder=contact.phone}}<br>
+  {{input type="text" value=model.phone}}<br>
   <label>Email:</label>  
-  {{input type="text" value=email placeholder=contact.email}}
-  <button {{action "createContact"}}>Submit</button>
+  {{input type="text" value=model.email}}
+  <button {{action "updateContact"}}>Update</button>
 </form>
 
 

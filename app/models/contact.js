@@ -2,8 +2,8 @@ import DS from "ember-data";
 
 //define the Contact model
 var Contact = DS.Model.extend({
-  firstname: DS.attr('string'),
-  lastname: DS.attr('string'),
+  firstName: DS.attr('string'),
+  lastName: DS.attr('string'),
   address: DS.attr('string'),
   city: DS.attr('string'),
   state: DS.attr('string'),
@@ -19,8 +19,8 @@ Contact.reopenClass({
   FIXTURES: [
     {
       id: 1,
-      firstname: 'John',
-      lastname: 'Doe',
+      firstName: 'John',
+      lastName: 'Doe',
       address: '4529 Valley Ln',
       city: 'Denver',
       state: 'CO',
@@ -31,8 +31,8 @@ Contact.reopenClass({
     },
     {
       id: 2,
-      firstname: 'Mike',
-      lastname: 'Smith',
+      firstName: 'Mike',
+      lastName: 'Smith',
       address: '7233 Franklin St.',
       city: 'Omaha',
       state: 'NE',
@@ -43,8 +43,8 @@ Contact.reopenClass({
     },
     {
       id: 3,
-      firstname: 'John',
-      lastname: 'Doe',
+      firstName: 'John',
+      lastName: 'Doe',
       address: '4529 Valley Ln',
       city: 'Denver',
       state: 'CO',
@@ -55,8 +55,8 @@ Contact.reopenClass({
     },
     {
       id: 4,
-      firstname: 'Mike',
-      lastname: 'Smith',
+      firstName: 'Mike',
+      lastName: 'Smith',
       address: '7233 Franklin St.',
       city: 'Omaha',
       state: 'NE',

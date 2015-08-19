@@ -1,0 +1,13 @@
+
+{{outlet}}
+
+{{#each model as |contact|}}
+  <a href="/{{contact.id}}">{{contact.firstName}}  {{contact.lastName}}</a>
+  <li>{{contact.address}}</li>
+  <li>{{contact.country}}</li>
+  <li>{{contact.city}}</li>
+  <li>{{contact.state}}</li>
+  <li>{{contact.zip}}</li>
+  <li>{{contact.phone}}</li>
+  <li>{{contact.email}}</li>
+{{/each}}
