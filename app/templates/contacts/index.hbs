@@ -1,15 +1,5 @@
-<ul>
-{{#each contact in model}}
-<h3 id="title">{{contact.firstname}}  {{contact.lastname}}</h3>
-  <li>{{contact.address}}</li>
-  <li>{{contact.country}}</li>
-  <li>{{contact.city}}</li>
-  <li>{{contact.state}}</li>
-  <li>{{contact.zip}}</li>
-  <li>{{contact.phone}}</li>
-  <li>{{contact.email}}</li>
-{{/each}}
-</ul>
+{{#link-to 'contacts.new'}}New Contact{{/link-to}}
+{{outlet}}
 
 {{#each model as |contact|}}
   <h3 id="title">{{contact.firstname}}  {{contact.lastname}}</h3>
@@ -21,3 +11,5 @@
   <li>{{contact.phone}}</li>
   <li>{{contact.email}}</li>
 {{/each}}
+
+

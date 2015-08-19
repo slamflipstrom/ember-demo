@@ -1,5 +1,6 @@
 import DS from "ember-data";
 
+//define the Contact model
 var Contact = DS.Model.extend({
   firstname: DS.attr('string'),
   lastname: DS.attr('string'),
@@ -13,6 +14,7 @@ var Contact = DS.Model.extend({
   isCompleted: DS.attr('boolean')
 });
 
+//Create Contact fixtures
 Contact.reopenClass({
   FIXTURES: [
     {
