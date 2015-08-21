@@ -43,7 +43,7 @@ Contact.reopenClass({
     },
     {
       id: 3,
-      firstName: 'John',
+      firstName: 'Barry',
       lastName: 'Doe',
       address: '4529 Valley Ln',
       city: 'Denver',
@@ -55,7 +55,7 @@ Contact.reopenClass({
     },
     {
       id: 4,
-      firstName: 'Mike',
+      firstName: 'Merp',
       lastName: 'Smith',
       address: '7233 Franklin St.',
       city: 'Omaha',

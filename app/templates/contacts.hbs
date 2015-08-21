@@ -2,7 +2,9 @@
 {{outlet}}
 
 {{#each model as |contact|}}
-  <a href="/{{contact.id}}">{{contact.firstName}}  {{contact.lastName}}</a>
+  {{#link-to 'contacts.show' contact}}
+    {{contact.firstName}} {{contact.lastName}}
+  {{/link-to}}
   <li>{{contact.address}}</li>
   <li>{{contact.country}}</li>
   <li>{{contact.city}}</li>
