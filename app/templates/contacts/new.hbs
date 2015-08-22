@@ -1,3 +1,4 @@
+{{#link-to 'contacts' class="btn btn-primary"}}Contacts{{/link-to}}
 <form>
   <label>First Name:</label>
   {{input type="text" value=model.firstName}}<br>
@@ -19,6 +20,6 @@
   {{input type="text" value=model.email}}
 </form>
 
-<button {{action "createContact"}}>Submit</button>
-<button {{action "cancelContact"}}>Cancel</button>
+<button {{action "createContact"}} class="btn btn-primary">Submit</button>
+<button {{action "cancelContact"}} class="btn btn-warning">Cancel</button>
 <br>

@@ -11,7 +11,7 @@ export default Ember.Route.extend({
 
       this.transitionTo('contacts');
 			contact.save();
-  		alert('Contact Successfully Added');
+  		alert(contact.errors);
     },
 
     cancelContact: function() {
@@ -19,7 +19,6 @@ export default Ember.Route.extend({
 
       contact.destroyRecord();
       this.transitionTo('contacts');
-      alert('Contact Successfully Removed');
     }
   }
 });

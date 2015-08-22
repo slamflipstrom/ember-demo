@@ -1,4 +1,4 @@
-<h1>SHOW</h1>
+{{#link-to 'contacts' class="btn btn-primary"}}Contacts{{/link-to}}
 <form>
   <label>First Name:</label>  
   {{input type="text" value=model.firstName}}<br>
@@ -20,7 +20,7 @@
   {{input type="text" value=model.email}}
 </form>
 
-<button {{action "updateContact"}}>Update</button>
+<button {{action "updateContact"}} class="btn btn-primary">Update</button>
 <br>
 
 
