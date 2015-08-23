@@ -1,9 +1,10 @@
 {{#link-to 'contacts' class="btn btn-primary"}}Contacts{{/link-to}}
-<form>
+{{#validatable-form action="createContact" model=model}}
   <label>First Name:</label>
-  {{input type="text" value=model.firstName}}<br>
+  {{input type="text" value=model.firstName required=true title="First name is required" autofocus=true}}<br>
+  <span class="error"></span>
   <label>Last Name:</label>
-  {{input type="text" value=model.lastName}}<br>
+  {{input type="text" value=model.lastName required=true title="Last name is required"}}<br>
   <label>Address:</label>
   {{input type="text" value=model.address}}<br>
   <label>Country:</label>
@@ -15,11 +16,13 @@
   <label>Zip Code:</label>
   {{input type="text" value=model.zip}}<br>
   <label>Phone:</label>
-  {{input type="text" value=model.phone}}<br>
+  {{input type="text" value=model.phone required=true title="Phone number is required"}}<br>
   <label>Email:</label>
-  {{input type="text" value=model.email}}
-</form>
+  {{input type="text" value=model.email required=true title="Email is required"}}<br>
+  <button type="submit" class="btn btn-primary">Submit</button>
+  <button {{action "cancelContact"}} class="btn btn-warning">Cancel</button>
 
-<button {{action "createContact"}} class="btn btn-primary">Submit</button>
-<button {{action "cancelContact"}} class="btn btn-warning">Cancel</button>
-<br>
+{{/validatable-form}}
+
+
+

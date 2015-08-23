@@ -6,12 +6,12 @@ export default Ember.Route.extend({
   },
 
   actions: {
-    createContact: function() {
-      var contact = this.get('currentModel');
-
-      this.transitionTo('contacts');
-			contact.save();
-  		alert(contact.errors);
+    createContact(contact) {
+      contact.save().then(() => {
+        this.transitionTo('contacts');
+      }).catch(() => {
+        alert("couldn't save contact.");
+      });
     },
 
     cancelContact: function() {
@@ -19,6 +19,11 @@ export default Ember.Route.extend({
 
       contact.destroyRecord();
       this.transitionTo('contacts');
+    },
+
+    willTransition() {
+      let contact = this.controller.get('model');
+      contact.rollback();
     }
   }
 });

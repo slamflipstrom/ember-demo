@@ -1,6 +1,5 @@
 import DS from "ember-data";
 
-
 //define the Contact model
 var Contact = DS.Model.extend({
   firstName: DS.attr('string'),
@@ -67,28 +66,5 @@ Contact.reopenClass({
     }
   ]
 });
-
-// Contact.reopen({
-//   validations: {
-//     firstName: {
-//       presence: true,
-//       presence: { message: 'First name must not be blank' },
-//       length: { minimum: 2 }
-//     },
-//     lastName: {
-//       presence: true,
-//       presence: { message: 'Last name must not be blank' }
-//     },
-//     phone: {
-//       presence: true,
-//       presence: { message: 'Phone number must not be blank' }
-//     },
-//     email:{
-//       presence: true,
-//       presence: { message: 'Email must not be blank' },
-//       format: { with: /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/, allowBlank: false , message: 'Must be a valid email address' }
-//     }
-//   }
-// });
 
 export default Contact;
