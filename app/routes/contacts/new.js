@@ -22,7 +22,7 @@ export default Ember.Route.extend({
     },
 
     willTransition() {
-      let contact = this.controller.get('model');
+      let contact = this.component.get('model');
       contact.rollback();
     }
   }
