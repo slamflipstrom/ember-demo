@@ -1,7 +1,7 @@
-import Ember from "ember";
+import Ember from 'ember';
 
 export default Ember.Component.extend({
-    selectedCountry: null,
+  selectedCountry: null,
     currentStates: null,
     countries: [
         {
@@ -116,14 +116,15 @@ export default Ember.Component.extend({
         }
     ],        
     selectedCountryChanged: function() { 
-        this.set('currentStates', this.get('selectedCountry.states'))
-        var selectedCountry = this.get('selectedCountry.name')
-        var country = this.get('model.country')
-        console.log(selectedCountry)
-        console.log(country)
+        this.set('currentStates', this.get('selectedCountry.states'));
+        var selectedCountry = this.get('selectedCountry.name');
+        var country = this.get('model.country');
+        console.log(selectedCountry);
+    return selectedCountry;
+ 
     }.observes('selectedCountry'),
 
-    click: function() {
-      this.sendAction('action');
-    }
-});
+    //get selected country (null)
+    //on change of selected country, populate selectedCountry.states
+    //get selectedState
+  });

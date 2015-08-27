@@ -1,0 +1,14 @@
+<label>Country:</label>
+{{ember-selectize
+  content=countries 
+  optionLabelPath="content.name"
+  optionValuePath="content.name"
+  value=model.country
+  selection=selectedCountry
+  prompt="Select a Country ..."}}<br>
+<label>State:</label>
+{{ember-selectize
+  content=currentStates
+  value=model.state
+  prompt="Select a State..."}}<br>
+{{log model}}
