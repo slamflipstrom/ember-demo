@@ -112,19 +112,25 @@ export default Ember.Component.extend({
 	                  'Tlaxcala',
 	                  'Veracruz',
 	                  'Yucatan',
+
 	                  'Zacatecas']
         }
-    ],        
-    selectedCountryChanged: function() { 
+    ],
+    selectedCountryChanged: function() {
         this.set('currentStates', this.get('selectedCountry.states'));
         var selectedCountry = this.get('selectedCountry.name');
         var country = this.get('model.country');
         console.log(selectedCountry);
-    return selectedCountry;
- 
-    }.observes('selectedCountry'),
+        this.sendAction('countrySelected', selectedCountry);
 
-    //get selected country (null)
-    //on change of selected country, populate selectedCountry.states
-    //get selectedState
+    }.observes('selectedCountry')
+
+    // actions: {
+    //   countrySelected: function() {
+    //     console.log('something selected');
+    //     var country = this.get('selectedCountry');
+    //     var state = this.get('selectedState');
+    //     this.set(country);
+    //   }
+  // }
   });

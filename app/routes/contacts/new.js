@@ -24,6 +24,14 @@ export default Ember.Route.extend({
     willTransition() {
       let contact = this.controller.get('model');
       contact.rollback();
+    },
+
+    countrySelected() {
+      console.log('country selected');
+    },
+
+    stateSelected() {
+      console.log('state selected');
     }
   }
 });

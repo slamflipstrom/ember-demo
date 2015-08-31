@@ -1,14 +1,16 @@
 <label>Country:</label>
-{{ember-selectize
-  content=countries 
+{{view "select"
+  content=countries
   optionLabelPath="content.name"
   optionValuePath="content.name"
   value=model.country
   selection=selectedCountry
+  action="countrySelected"
   prompt="Select a Country ..."}}<br>
 <label>State:</label>
-{{ember-selectize
+{{view "select"
   content=currentStates
   value=model.state
+  selection = selectedState
+  action="stateSelected"
   prompt="Select a State..."}}<br>
-{{log model}}
