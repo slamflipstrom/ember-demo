@@ -2,6 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   selectedCountry: null,
+  selectedState: null,
     currentStates: null,
     countries: [
         {
@@ -119,18 +120,14 @@ export default Ember.Component.extend({
     selectedCountryChanged: function() {
         this.set('currentStates', this.get('selectedCountry.states'));
         var selectedCountry = this.get('selectedCountry.name');
-        var country = this.get('model.country');
         console.log(selectedCountry);
         this.sendAction('countrySelected', selectedCountry);
+    }.observes('selectedCountry'),
 
-    }.observes('selectedCountry')
+    selectedStateChanged: function(){
+      if (this.get('selectedState')) {
+        this.sendAction('stateSelected', this.get('selectedState'));
+      }
+    }.observes('selectedState')
 
-    // actions: {
-    //   countrySelected: function() {
-    //     console.log('something selected');
-    //     var country = this.get('selectedCountry');
-    //     var state = this.get('selectedState');
-    //     this.set(country);
-    //   }
-  // }
   });

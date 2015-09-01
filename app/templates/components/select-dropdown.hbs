@@ -1,5 +1,5 @@
 <label>Country:</label>
-{{view "select"
+{{md-select
   content=countries
   optionLabelPath="content.name"
   optionValuePath="content.name"
@@ -8,7 +8,7 @@
   action="countrySelected"
   prompt="Select a Country ..."}}<br>
 <label>State:</label>
-{{view "select"
+{{md-select
   content=currentStates
   value=model.state
   selection = selectedState

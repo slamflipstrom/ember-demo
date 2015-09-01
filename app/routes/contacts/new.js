@@ -26,12 +26,14 @@ export default Ember.Route.extend({
       contact.rollback();
     },
 
-    countrySelected() {
-      console.log('country selected');
+    countrySelected(country) {
+      let contact = this.controller.get('model');
+      contact.set('country', country);
     },
 
-    stateSelected() {
-      console.log('state selected');
+    stateSelected(state) {
+      let contact = this.controller.get('model');
+      contact.set('state', state);
     }
   }
 });
