@@ -17,7 +17,7 @@
   <label>Phone:</label>
   {{md-input type="text" value=model.phone required=true title="Phone number is required"}}<br>
   <label>Email:</label>
-  {{md-input type="text" value=model.email required=true title="Email is required"}}<br>
+  {{md-input type="email" value=model.email required=true title="Email is required"}}<br>
   <button {{action "updateContact"}} class="btn btn-primary">Submit</button>
 {{/validatable-form}}
 
