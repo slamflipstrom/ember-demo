@@ -7,7 +7,6 @@ export default Ember.Route.extend({
 
       this.transitionTo('contacts');
       contact.save();
-      alert('Contact Successfully Updated');
     },
     countrySelected(country) {
       let contact = this.controller.get('model');

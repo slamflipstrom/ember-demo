@@ -120,7 +120,6 @@ export default Ember.Component.extend({
     selectedCountryChanged: function() {
         this.set('currentStates', this.get('selectedCountry.states'));
         var selectedCountry = this.get('selectedCountry.name');
-        console.log(selectedCountry);
         this.sendAction('countrySelected', selectedCountry);
     }.observes('selectedCountry'),
 

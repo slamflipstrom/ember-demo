@@ -19,50 +19,50 @@ Contact.reopenClass({
     {
       id: 1,
       firstName: 'John',
-      lastName: 'Doe',
-      address: '4529 Valley Ln',
+      lastName: 'Elway',
+      address: '4529 Bronco Blvd',
       city: 'Denver',
-      state: 'CO',
+      state: 'Colorado',
       country: 'USA',
       zip: '80205',
       phone: '303-555-5555',
-      email: 'jdoe@jdoe.com'
+      email: 'jelway@broncos.com'
     },
     {
       id: 2,
-      firstName: 'Mike',
-      lastName: 'Smith',
+      firstName: 'Leslie',
+      lastName: 'Knope',
       address: '7233 Franklin St.',
-      city: 'Omaha',
-      state: 'NE',
+      city: 'Pawnee',
+      state: 'Indiana',
       country: 'USA',
-      zip: '68136',
-      phone: '308-234-5555',
-      email: 'msmith@gmail.com'
+      zip: '78136',
+      phone: '888-234-5555',
+      email: 'lknope@pawnee.net'
     },
     {
       id: 3,
-      firstName: 'Barry',
-      lastName: 'Doe',
+      firstName: 'Donald',
+      lastName: 'Trump',
       address: '4529 Valley Ln',
-      city: 'Denver',
-      state: 'CO',
+      city: 'Las Vegas',
+      state: 'Nevada',
       country: 'USA',
-      zip: '80205',
-      phone: '303-555-5555',
-      email: 'jdoe@jdoe.com'
+      zip: '48943',
+      phone: '555-555-5555',
+      email: 'trumpbamf@trump.com'
     },
     {
       id: 4,
-      firstName: 'Merp',
-      lastName: 'Smith',
+      firstName: 'Alex',
+      lastName: 'Morgan',
       address: '7233 Franklin St.',
-      city: 'Omaha',
-      state: 'NE',
+      city: 'Los Angeles',
+      state: 'California',
       country: 'USA',
-      zip: '68136',
-      phone: '308-234-5555',
-      email: 'msmith@gmail.com'
+      zip: '90285',
+      phone: '651-777-5555',
+      email: 'amorgan@ussoccer.com'
     }
   ]
 });

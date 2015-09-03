@@ -18,9 +18,12 @@ nav{
   background-color: #00bcd4;
   padding: 5px;
   margin-bottom: 40px;
+  height: 70px;
+  
   
   h2#title{
-    margin: 0px
+    margin: 0px;
+    padding-left: 5px;
   }
 }
   
@@ -48,9 +51,10 @@ form {
   input[type=email] {
     height: 2.2rem;
     margin-left: 5px;
+    margin-bottom: 20px;
   }
   div.input-field {
-   margin-top: 0;
+   margin-top: 6px;
   }
   .input-field label {
     font-size: 0.9rem;
@@ -78,13 +82,17 @@ form {
 
 a.btn-primary{
   position: absolute;
-  top: 77px;  
+  top: 80px;  
   left: 10px;
   font-size: 16px;
 }
 
 button{
   margin-bottom: 25px;
+  
+  &[type=submit]{
+    background-color: #00bcd4;
+  }
 }
 
 a#cancel-contact{
@@ -104,7 +112,7 @@ ul#index{
   overflow:hidden;
 
   ul.contact-data{
-    width: 42%;
+    width: 45%;
     margin:0 auto;
     display: inline-block;
     float:left;
