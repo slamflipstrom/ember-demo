@@ -1,22 +1,21 @@
 {{#link-to 'contacts' class="btn btn-primary"}}Contacts{{/link-to}}
 {{#validatable-form action="updateContact" model=model}}
-  <label>First Name:</label>
-  {{md-input type="text" value=model.firstName required=true title="First name is required" autofocus=true}}<br>
-  <span class="error"></span>
-  <label>Last Name:</label>
-  {{md-input type="text" value=model.lastName required=true title="Last name is required"}}<br>
-  <label>Address:</label>
+  <label class='input-label'>First Name:</label>
+  {{md-input type="text" min="3" value=model.firstName required=true title="First name is required" autofocus=true}}<br>
+  <label class='input-label'>Last Name:</label>
+  {{md-input type="text" min="3" validate=true value=model.lastName required=true title="Last name is required"}}<br>
+  <label class='input-label'>Address:</label>
   {{md-input type="text" value=model.address}}<br>
 
  {{select-dropdown model countrySelected="countrySelected" stateSelected="stateSelected"}}
 
-  <label>City:</label>
+  <label class='input-label'>City:</label>
   {{md-input type="text" value=model.city}}<br>
-  <label>Zip Code:</label>
+  <label class='input-label'>Zip Code:</label>
   {{md-input type="text" value=model.zip}}<br>
-  <label>Phone:</label>
+  <label class='input-label'>Phone:</label>
   {{md-input type="text" value=model.phone required=true title="Phone number is required"}}<br>
-  <label>Email:</label>
+  <label class='input-label'>Email:</label>
   {{md-input type="email" value=model.email required=true title="Email is required"}}<br>
   <button {{action "updateContact"}} class="btn btn-primary">Submit</button>
 {{/validatable-form}}

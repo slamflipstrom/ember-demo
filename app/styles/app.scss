@@ -1,2 +1,108 @@
 @import 'materialize';
 @import 'ember-cli-materialize';
+
+body{
+  margin: 0 auto
+}
+
+div#content{
+  margin:10px;
+}
+
+div#list{
+  display: inline-block;
+  
+}
+
+nav{
+  background-color: #00bcd4;
+  padding: 5px;
+  margin-bottom: 40px;
+  
+  h2#title{
+    margin: 0px
+  }
+}
+  
+form {
+  width: 33%;
+  line-height: .8;
+  margin-top: 30px;
+  display: inline-block;
+  float: left;
+
+
+  input[type=text] {
+    height: 1.5rem;
+    margin-left: 5px;
+  }
+  input[type=tel] {
+    height: 1.5rem;
+    margin-left: 5px;
+  }
+  input[type=email] {
+    height: 1.5rem;
+    margin-left: 5px;
+  }
+  .input-field label {
+    font-size: 0.9rem;
+    top: .6rem;
+  }
+  label.input-error {
+    margin-left: 30px;
+    margin-bottom: 5px;
+  }
+  label.active {
+    top: 3.1rem;
+    margin-left:0px;
+  }
+  label.input-label{
+    margin-left: 10px;
+    font-size: 14px;
+  }
+  select{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  div.select-component{
+    
+  }
+}
+
+a.btn-primary{
+  position: absolute;
+  top: 77px;  
+  left: 10px;
+  font-size: 16px;
+}
+
+button{
+  margin-bottom: 25px;
+}
+
+a#cancel-contact{
+  margin-bottom: 25px;
+}
+
+div.header{
+  display: block;
+  background-color: #FFFFFF;
+}
+
+a.contact-name{
+  font-size: 20px;
+}
+
+ul#index{
+  margin-left: 45px;
+  display: inline-block;
+  width: 60%;
+  
+  li {
+      width:100%;
+      display:block;
+      margin: 0 auto;
+      margin-right:16px;
+      list-style-type: none;
+  }
+}

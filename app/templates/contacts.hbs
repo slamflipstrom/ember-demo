@@ -1,15 +1,19 @@
 
 {{outlet}}
 
-{{#each model as |contact|}}
-  {{#link-to 'contacts.show' contact}}
-    {{contact.firstName}} {{contact.lastName}}
-  {{/link-to}}
-  <li>{{contact.address}}</li>
-  <li>{{contact.country}}</li>
-  <li>{{contact.city}}</li>
-  <li>{{contact.state}}</li>
-  <li>{{contact.zip}}</li>
-  <li>{{contact.phone}}</li>
-  <li>{{contact.email}}</li>
-{{/each}}
+<ul id="index">
+  {{#each model as |contact|}}
+    {{#link-to 'contacts.show' contact class="contact-name"}}
+      {{contact.firstName}} {{contact.lastName}}
+    {{/link-to}}
+    <ul class="contact-data">
+      <li>{{contact.address}}</li>
+      <li>{{contact.country}}</li>
+      <li>{{contact.city}}</li>
+      <li>{{contact.state}}</li>
+      <li>{{contact.zip}}</li>
+      <li>{{contact.phone}}</li>
+      <li>{{contact.email}}</li>
+    </ul>
+  {{/each}}
+</ul>
