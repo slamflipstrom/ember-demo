@@ -28,7 +28,7 @@ JS application built with Backbone, Marionette, Jade, and Sass
 
 Prerequisites:
 Git
-Node.js (with NPM)  
+Node.js (with NPM)
 
-Working demo:  
+Working demo:
 https://fast-reef-5507.herokuapp.com/
