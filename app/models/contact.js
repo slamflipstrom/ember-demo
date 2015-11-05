@@ -23,7 +23,7 @@ Contact.reopenClass({
       address: '4529 Bronco Blvd',
       city: 'Denver',
       state: 'Colorado',
-      country: 'USA',
+      country: 'United States',
       zip: '80205',
       phone: '303-555-5555',
       email: 'jelway@broncos.com'
@@ -35,7 +35,7 @@ Contact.reopenClass({
       address: '7233 Franklin St.',
       city: 'Pawnee',
       state: 'Indiana',
-      country: 'USA',
+      country: 'United States',
       zip: '78136',
       phone: '888-234-5555',
       email: 'lknope@pawnee.net'
@@ -47,7 +47,7 @@ Contact.reopenClass({
       address: '4529 Valley Ln',
       city: 'Las Vegas',
       state: 'Nevada',
-      country: 'USA',
+      country: 'United States',
       zip: '48943',
       phone: '555-555-5555',
       email: 'trumpbamf@trump.com'
@@ -59,10 +59,34 @@ Contact.reopenClass({
       address: '7233 Franklin St.',
       city: 'Los Angeles',
       state: 'California',
-      country: 'USA',
+      country: 'United States',
       zip: '90285',
       phone: '651-777-5555',
       email: 'amorgan@ussoccer.com'
+    },
+    {
+      id: 5,
+      firstName: 'Laura',
+      lastName: 'Palmer',
+      address: '708 33rd St.',
+      city: 'Twin Peaks',
+      state: 'Washington',
+      country: 'United States',
+      zip: '34822',
+      phone: '206-823-4444',
+      email: 'bobbysgurl@loglady.com'
+    },
+    {
+      id: 6,
+      firstName: 'Rick',
+      lastName: 'Grimes',
+      address: '9765 2nd Ave',
+      city: 'King County',
+      state: 'Georgia',
+      country: 'United States',
+      zip: '74211',
+      phone: '745-652-4412',
+      email: 'cuddlykitten@hotmail.com'
     }
   ]
 });
